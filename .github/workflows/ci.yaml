@@ -4,13 +4,14 @@ on:
   pull_request:
     branches:
       - develop
-strategy:
-  matrix:
-    go: ['1.14','1.15']
 jobs:
   check-application:
     runs-on: ubuntu-latest
     steps:
+    strategy:
+      matrix:
+        go: ['1.14','1.15']
+
       - name: Check out the code
         uses: actions/checkout@v2
 
