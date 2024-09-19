@@ -7,10 +7,10 @@ on:
 jobs:
   check-application:
     runs-on: ubuntu-latest
-    steps:
     strategy:
       matrix:
         go: ['1.14','1.15']
+    steps:
 
       - name: Check out the code
         uses: actions/checkout@v2
