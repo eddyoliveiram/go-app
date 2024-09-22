@@ -20,3 +20,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
           SONAR_TOKEN: 5b85f87cbc59bf260d31c7e2257aa106684208a1
 
+ 
